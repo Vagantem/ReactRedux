@@ -26,6 +26,20 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.less|css$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "less-loader"
+          }
+        ]
+      },
     ]
   },
   resolve: {

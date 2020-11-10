@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+import {App} from "./modules/App/component";
 
-const app: HTMLElement | null = document.querySelector('#app');
-ReactDOM.render(<div>hello world, Tyt TS</div>, app);
+const appElement: HTMLElement | null = document.querySelector('#app');
+ReactDOM.render(<App />, appElement);
